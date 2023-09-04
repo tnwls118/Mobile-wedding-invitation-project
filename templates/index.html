@@ -1,0 +1,260 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".gallery").slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+            });
+            $(".post1").click(function () {
+                let src = $(this).attr('src');
+                $("#modal-image").attr('src', src);
+                $("#exampleModal").modal("show");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="first">
+            <div class="overlay">
+                <div id="snow"></div>
+                <p class="first-top">
+                    최수진<br>
+                    &hearts;<br>
+                    석정아
+                </p>
+                <p class="first-bottom">2023.08.26 SAT PM 13:00</p>
+            </div>
+        </div>
+        <div class="row2">
+            <p>
+                <strong>초대합니다.</strong><br>
+                평생을 같이하고 싶은 사람을 만났습니다.<br>
+                서로 아껴주고 이해하며<br>
+                사랑을 베풀며 살고 싶습니다.<br>
+                저희 약속 위에 따뜻한 격려로 축복해 주셔서<br>
+                힘찬 출발의 디딤이 되어 주십시오.
+            </p>
+        </div>
+        <div class="row2">
+            <img src="/static/a.jpg" </div>
+            <div class="row1">
+                <table class="intro">
+                    <tbody>
+                        <tr>
+                            <td><strong>홍길동 영실이</strong></td>
+                            <td><small>의 장남</small></td>
+                            <td>
+                                <strong>최수진</strong>
+                                <a href="tel:01091720469">
+                                    <svg style="width: 15px; height: 15px;" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24">
+                                        <title>phone</title>
+                                        <path
+                                            d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>홍길동 영실이</strong></td>
+                            <td><small>의 장녀</small></td>
+                            <td>
+                                <strong>석정아</strong>
+                                <a href="tel:01035361961">
+                                    <svg style="width: 15px; height: 15px;" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24">
+                                        <title>phone</title>
+                                        <path
+                                            d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row2">
+                <h3>8월 26일</h3>
+                <h5>오후 13시</h5>
+                <hr>
+                <table class="calender">
+                    <thead>
+                        <tr>
+                            <td class="sun">일</td>
+                            <td class="sat">월</td>
+                            <td>화</td>
+                            <td>수</td>
+                            <td>목</td>
+                            <td>금</td>
+                            <td>토</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="out">30</td>
+                            <td class="out">31</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td class="sun">6</td>
+                            <td class="sat">7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td class="sun">13</td>
+                            <td class="sat">14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td class="sun">20</td>
+                            <td class="sat">21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <td class="sun">27</td>
+                            <td class="sat">28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td class="out">1</td>
+                            <td class="out">2</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>수진&hearts;정아의 결혼식이 {{diff}}일 남았습니다.</p>
+                <hr>
+            </div>
+            <div class="row1 guestbook-row">
+                <h4>방명록 남기기 </h4>
+                <form method="POST" action="/write" class="guestbook">
+                    <input type="text" name="name" placeholder="이름">
+                    <textarea rows="3" name="content" placeholder="내용"></textarea>
+                    <button type="submit">남기기</button>
+                </form>
+                <table>
+                    <tbody>
+                        {% for gb in guestbooks %}
+                        <tr>
+                            <td>{{gb.name}}</td>
+                            <td class="content">{{gb.content}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div class="row2">
+                <h4><strong>마음 전하실 곳</strong></h4>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    신랑측 계좌번호
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                xx은행 10000-0000-0000-0000
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    신부측 계좌번호
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                xx은행 10000-0000-0000-0000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row1">
+                <h4><strong>찾아오시는 길</strong></h4>
+                <div id="daumRoughmapContainer1693294341188" class="root_daum_roughmap root_daum_roughmap_landing">
+                </div>
+                <script charset="UTF-8" class="daum_roughmap_loader_script"
+                    src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp": "1693294341188",
+                        "key": "2gzk4",
+                        "mapWidth": "1030",
+                        "mapHeight": "550"
+                    }).render();
+                </script>
+            </div>
+            <div class="row2">
+                <h4><strong>갤러리</strong></h4>
+                <div class="gallery">
+                    <img src="/static/1.jpg" class="post1">
+                    <img src="/static/2.jpg" class="post1">
+                    <img src="/static/3.jpg" class="post1">
+                    <img src="/static/4.jpg" class="post1">
+                    <img src="/static/5.jpg" class="post1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <img id="modal-image">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/pureSnow.js"></script>
+</body>
+
+</html>

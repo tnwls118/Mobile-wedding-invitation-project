@@ -1,0 +1,175 @@
+:root {
+  --red: #d25a4b;
+  --blue: #369de9;
+  --gray: #aaaaaa;
+  --black: #050203;
+}
+
+@font-face {
+  font-family: 'GowunBatang-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  color: var(--black);
+  font-size: 16px;
+  font-family: 'GowunBatang-Regular', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  width: 100%;
+  max-width: 280px;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.first {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/static/wed.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.first .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-family: 'GowunBatang-Regular', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.first .first-top {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.first .first-bottom {
+  font-size: 20px;
+}
+
+.row1,
+.row2 {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.intro {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.calender {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.calender td {
+  text-align: center;
+  padding: 10px;
+}
+
+.calender thead td {
+  font-weight: bold;
+}
+
+.sun {
+  color: var(--red);
+}
+
+.sat {
+  color: var(--blue);
+}
+
+.out {
+  color: var(--gray);
+}
+
+.guestbook-row {
+  background: #8b9207;
+  padding: 50px 20px;
+}
+
+.guestbook input,
+.guestbook textarea {
+  width: 100%;
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.guestbook button {
+  border: none;
+  background: #5d4d05;
+  border-radius: 5px;
+  padding: 12px 24px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.guestbook-row table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.guestbook table tr {
+  background: #fff;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.guestbook-row table td {
+  padding: 10px;
+  font-family: 'GowunBatang-Regular', sans-serif;
+}
+
+.guestbook-row table td.content {
+  white-space: pre;
+}
+
+.snowflake {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(white, white);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px white);
+}
+
+.root_daum_roughmap {
+  width: 100% !important;
+}
+
+.slick-slide {
+  height: auto !important;
+}
